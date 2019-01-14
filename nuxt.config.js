@@ -29,7 +29,7 @@ module.exports = {
   /*
   ** Plugins to load before mounting the App
   */
-  plugins: [{ src: '~/plugins/eventBus.js', ssr: false }],
+  plugins: [{ src: '~/plugins/eventBus.ts', ssr: false }],
   /*
   ** Nuxt.js modules
   */
