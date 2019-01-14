@@ -9,7 +9,7 @@
     "build": "nuxt build",
     "start": "nuxt start",
     "generate": "nuxt generate",
-    "lint": "eslint --ext .js,.vue,.tx --ignore-path .eslintignore .",
+    "lint": "eslint --ext .js,.vue,.ts --ignore-path .eslintignore .",
     "lintfix": "eslint --fix --ext .js,.vue,.tx --ignore-path .eslintignore ."
   },
   "husky": {
@@ -36,6 +36,7 @@
     "@nuxtjs/bulma": "^1.2.0",
     "cross-env": "^5.2.0",
     "nuxt": "2.3.4",
+    "lodash": "^4.17.11",
     "nuxt-property-decorator": "^1.3.1",
     "vuex-class": "^0.3.1"
   },
