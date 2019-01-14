@@ -6,6 +6,8 @@ module.exports = {
   /*
   ** Headers of the page
   */
+  srcDir: 'app',
+  modulesDir: './node_modules',
   head: {
     title: pkg.name,
     meta: [
