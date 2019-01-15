@@ -26,12 +26,13 @@ module.exports = {
   /*
   ** Global CSS
   */
-  css: [],
+  css: [{ src: 'bulma/bulma.sass', lang: 'sass' }],
 
   /*
   ** Plugins to load before mounting the App
   */
   plugins: [{ src: '~/plugins/eventBus.ts', ssr: false }],
+
   /*
   ** Nuxt.js modules
   */
@@ -42,6 +43,7 @@ module.exports = {
     '@nuxtjs/bulma',
     '~/modules/typescript.js'
   ],
+
   /*
   ** Axios module configuration
   */
