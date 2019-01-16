@@ -30,19 +30,7 @@ module.exports = {
     //フォーマットが壊れる要調査 0にして無視する
     'no-console': process.env.NODE_ENV === 'production' ? 'error' : 'off',
     'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off',
-    'prettier/prettier': [
-      'error',
-      {
-        printWidth: 120,
-        tabWidth: 2,
-        semi: true,
-        singleQuote: true,
-        trailingComma: 'none',
-        bracketSpacing: true,
-        useTabs: false
-        // parser: 'vue',
-      }
-    ],
+    'prettier/prettier': 'error',
     'require-jsdoc': 'off',
     'valid-jsdoc': 'off',
     'import/order': 'error',
