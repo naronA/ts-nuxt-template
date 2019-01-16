@@ -65,6 +65,7 @@
     "ts-loader": "5.3.3",
     "typescript": "3.1.1",
     "typescript-eslint-parser": "^21.0.2",
-    "vue-eslint-parser": "^5.0.0"
+    "vue-eslint-parser": "^5.0.0",
+    "vuex-module-decorators": "^0.9.7"
   }
 }
