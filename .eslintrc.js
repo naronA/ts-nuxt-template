@@ -12,14 +12,14 @@ module.exports = {
     parser: 'typescript-eslint-parser',
     jsx: true,
     useJSXTextNode: true
-    // parser: 'babel-eslint',
-    // sourceType: 'module',
-    // ecmaVersion: 2017,
-    // ecmaFeatures: {
-    //   jsx: true
-    // }
   },
-  extends: ['eslint:recommended', 'plugin:vue/recommended', 'plugin:prettier/recommended', 'standard', 'typescript'],
+  extends: [
+    'eslint:recommended',
+    'plugin:vue/recommended',
+    'plugin:prettier/recommended',
+    'standard',
+    'typescript'
+  ],
   plugins: [
     'vue',
     'import'
