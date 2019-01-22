@@ -9,7 +9,7 @@ module.exports = {
   },
   parser: 'vue-eslint-parser',
   parserOptions: {
-    parser: 'typescript-eslint-parser',
+    parser: '@typescript-eslint/parser',
     jsx: true,
     useJSXTextNode: true
   },
@@ -17,8 +17,8 @@ module.exports = {
     'eslint:recommended',
     'plugin:vue/recommended',
     'plugin:prettier/recommended',
-    'standard',
-    'typescript'
+    'plugin:@typescript-eslint/recommended',
+    'standard'
   ],
   plugins: [
     'vue',
@@ -28,6 +28,10 @@ module.exports = {
   rules: {
     // 'typescript/no-var-requires': 'off',
     //フォーマットが壊れる要調査 0にして無視する
+    'indent': 'off',
+    '@typescript-eslint/indent': ['error', 2],
+    '@typescript-eslint/explicit-member-accessibility': 'off',
+    '@typescript-eslint/no-explicit-any': 'off',
     'no-console': process.env.NODE_ENV === 'production' ? 'error' : 'off',
     'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off',
     'prettier/prettier': ['error', {

@@ -25,7 +25,6 @@ import { Component, Vue } from 'nuxt-property-decorator';
 import Logo from '../components/Logo.vue';
 
 @Component({ components: { Logo } })
-
 export default class extends Vue {}
 </script>
 
@@ -39,8 +38,8 @@ export default class extends Vue {}
 }
 
 .title {
-  font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
-    'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue',
+    Arial, sans-serif;
   display: block;
   font-weight: 300;
   font-size: 100px;
