@@ -17,13 +17,11 @@ module.exports = {
     'eslint:recommended',
     'plugin:vue/recommended',
     'plugin:prettier/recommended',
-    'plugin:@typescript-eslint/recommended',
-    'standard'
+    'plugin:@typescript-eslint/recommended'
   ],
   plugins: [
     'vue',
     'import'
-    // 'prettier',
   ],
   rules: {
     // 'typescript/no-var-requires': 'off',
@@ -34,50 +32,28 @@ module.exports = {
     '@typescript-eslint/no-explicit-any': 'off',
     'no-console': process.env.NODE_ENV === 'production' ? 'error' : 'off',
     'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off',
-    'prettier/prettier': ['error', {
-      printWidth: 120,
-      tabWidth: 2,
-      semi: true,
-      singleQuote: true,
-      trailingComma: 'none',
-      bracketSpacing: true,
-      useTabs: false
-    }],
+    'prettier/prettier': 'error',
     'require-jsdoc': 'off',
     'valid-jsdoc': 'off',
     'import/order': 'error',
     'sort-imports': 'error',
     'vue/singleline-html-element-content-newline': 'off',
     'vue/component-name-in-template-casing': 'off',
-    'vue/html-closing-bracket-newline': [
-      'error',
-      {
+    'vue/html-closing-bracket-newline': [ 'error', {
         singleline: 'never',
         multiline: 'always'
       }
     ],
-    'vue/max-attributes-per-line': [
-      'error',
-      {
+    'vue/max-attributes-per-line': [ 'error', {
         singleline: 5,
-        multiline: {
-          max: 1,
-          allowFirstLine: false
-        }
+        multiline: { max: 1, allowFirstLine: false }
       }
     ],
-    'vue/html-self-closing': [
-      'error',
-      {
-        html: {
-          void: 'any'
-        }
+    'vue/html-self-closing': [ 'error', {
+        html: { void: 'any' }
       }
     ],
-    'vue/html-indent': [
-      'error',
-      2,
-      {
+    'vue/html-indent': [ 'error', 2, {
         attribute: 1,
         baseIndent: 1,
         closeBracket: 0,
@@ -85,17 +61,13 @@ module.exports = {
         ignores: []
       }
     ],
-    'import/newline-after-import': [
-      'error',
-      {
+    'import/newline-after-import': [ 'error', {
         count: 1
       }
     ],
     'no-spaced-func': 'error',
     'prefer-const': 'error', // 再代入がない限り const を強制
-    'semi-spacing': [
-      'error',
-      {
+    'semi-spacing': [ 'error', {
         after: true,
         before: false
       }
@@ -104,9 +76,7 @@ module.exports = {
     'space-before-function-paren': ['error', 'never'],
     semi: ['error', 'always'], // 末尾セミコロンを強制
     strict: 'off', // strict 強制を緩和
-    'max-len': [
-      'error',
-      {
+    'max-len': [ 'error', {
         code: 120,
         tabWidth: 2,
         ignoreTrailingComments: true,
