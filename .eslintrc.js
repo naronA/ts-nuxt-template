@@ -30,6 +30,11 @@ module.exports = {
     '@typescript-eslint/indent': ['error', 2],
     '@typescript-eslint/explicit-member-accessibility': 'off',
     '@typescript-eslint/no-explicit-any': 'off',
+    'space-before-function-paren': ['error', {
+      'anonymous': 'never',
+      'named': 'never',
+      'asyncArrow': 'always'
+    }],
     'no-console': process.env.NODE_ENV === 'production' ? 'error' : 'off',
     'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off',
     'prettier/prettier': 'error',
@@ -73,7 +78,6 @@ module.exports = {
       }
     ],
     'semi-style': ['error', 'last'],
-    'space-before-function-paren': ['error', 'never'],
     semi: ['error', 'always'], // 末尾セミコロンを強制
     strict: 'off', // strict 強制を緩和
     'max-len': [ 'error', {
