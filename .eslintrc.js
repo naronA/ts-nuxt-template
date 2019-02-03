@@ -28,8 +28,9 @@ module.exports = {
     //フォーマットが壊れる要調査 0にして無視する
     'indent': 'off',
     '@typescript-eslint/indent': ['error', 2],
-    '@typescript-eslint/explicit-member-accessibility': 'off',
+    // '@typescript-eslint/explicit-member-accessibility': 'off',
     '@typescript-eslint/no-explicit-any': 'off',
+    '@typescript-eslint/adjacent-overload-signatures': 'off',
     'space-before-function-paren': ['error', {
       'anonymous': 'never',
       'named': 'never',
@@ -41,7 +42,7 @@ module.exports = {
     'require-jsdoc': 'off',
     'valid-jsdoc': 'off',
     'import/order': 'error',
-    'sort-imports': 'error',
+    'sort-imports': 'off',
     'vue/singleline-html-element-content-newline': 'off',
     'vue/component-name-in-template-casing': 'off',
     'vue/html-closing-bracket-newline': [ 'error', {
